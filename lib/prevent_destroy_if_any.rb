@@ -24,7 +24,7 @@ class ActiveRecord::Base
             :associated_objects => available_associations.join(', ')
           )
         )
-        if ActiveRecord.version.version.to_f >= 5.2
+        if ActiveRecord.version.version.to_f >= 5.0
           throw :abort
         else
           false
